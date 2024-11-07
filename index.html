@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Champions League</title>
+    <link rel="stylesheet" href="./cup1.css">
+    
+
+</head>
+<body>
+     <div class="container" id="welcome">
+        <h1>Welcome to the English Champions League</h1>
+        <p>Are you ready to test your English skills?</p>
+        <button onclick="startCompetition()">Start the Competition</button>
+    </div>
+
+    <div class="container" id="quiz" style="display: none;">
+        <div id="timer">30:00</div>
+        <div id="question-container"></div>
+        <div class="navigation">
+            <button id="prevBtn" onclick="navigateQuestion(-1)" style="display: none;">Previous</button>
+            <button id="nextBtn" onclick="navigateQuestion(1)">Next</button>
+            <button id="submitBtn" onclick="submitQuiz()" style="display: none;">Submit</button>
+        </div>
+        <div id="result"></div>
+    </div>
+<script src="./cup1.js">
+    
+</script>
+</body>
+</html>
